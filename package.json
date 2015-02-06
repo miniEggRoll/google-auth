@@ -1,0 +1,37 @@
+{
+  "name": "google-auth",
+  "version": "1.0.0",
+  "description": "token exchange through google oauth",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miniEggRoll/google-auth.git"
+  },
+  "keywords": [
+    "oauth",
+    "google"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miniEggRoll/google-auth/issues"
+  },
+  "homepage": "https://github.com/miniEggRoll/google-auth",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "coffee-script": "git://github.com/jashkenas/coffee-script",
+    "debug": "^2.1.1",
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
+  },
+  "dependencies": {
+    "firebase-token-generator": "^2.0.0",
+    "glob": "^4.3.5",
+    "koa": "^0.16.0",
+    "koa-compose": "^2.3.0",
+    "underscore": "^1.7.0"
+  }
+}
