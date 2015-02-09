@@ -4,6 +4,7 @@ http        = require 'http'
 path        = require 'path'
 debug       = require('debug')('auth:index')
 koa         = require 'koa'
+bodyParser  = require 'koa-body-parser'
 _           = require 'underscore'
 
 error       = require path.join(__dirname, 'error')
@@ -17,6 +18,7 @@ origin      = require path.join(__dirname, 'origin')
 app = koa()
 
 app.use error
+app.use bodyParser()
 app.use preauth
 app.use auth
 app.use userinfo

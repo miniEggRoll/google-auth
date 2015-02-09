@@ -19,7 +19,7 @@ getData = (reqOpt)->
         do emailReq.end
 
 module.exports = (next)->
-    token = @get 'googleAccessToken'
+    token = @request.body.googleAccessToken
     reqOpt =
         hostname: 'www.googleapis.com'
         path: "/oauth2/v2/userinfo"
