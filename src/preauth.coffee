@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = (next)->
-    @throw 405 unless @method is 'POST'
-    @set {'Access-Control-Allow-Origin': @headers.origin}
+    @throw 405 unless @method in ['POST', 'OPTIONS']
+    @set 'Access-Control-Allow-Origin', @get 'origin'
     yield next
     @status = 204 unless @body?
